@@ -10,6 +10,11 @@ The code of HSEmotionONNX Python Library is released under the Apache-2.0 Licens
     python setup.py install
 ```
 
+It is also possible to install it via pip:
+```
+    pip install hsemotion-onnx
+```
+
 
 ## Usage
 
