@@ -1,4 +1,7 @@
 # HSEmotionONNX Python Library for Facial Emotion Recognition
+[![Downloads](https://static.pepy.tech/personalized-badge/hsemotion_onnx?period=total&units=international_system&left_color=grey&right_color=blue&left_text=pip%20installs)](https://pepy.tech/project/hsemotion_onnx)
+[![pypi package](https://img.shields.io/badge/version-v0.3.0-blue)](https://pypi.org/project/hsemotion_onnx)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/classifying-emotions-and-engagement-in-online/facial-expression-recognition-on-affectnet)](https://paperswithcode.com/sota/facial-expression-recognition-on-affectnet?p=classifying-emotions-and-engagement-in-online)
 
 ## License
 
