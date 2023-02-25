@@ -7,7 +7,7 @@ import numpy as np
 import cv2
 import onnx
 import onnxruntime as ort
-import urllib
+import urllib.request
 
 #def get_model_path(model_name):
 #    return '../../models/affectnet_emotions/onnx/'+model_name+'.onnx'
