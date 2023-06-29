@@ -86,8 +86,6 @@ def process_video(videofile=0):
                 if min_y<0:
                     min_y=10
                 cv2.putText(image, fer.idx_to_class[emotion], (x1, min_y), cv2.FONT_HERSHEY_PLAIN , fontScale=fontScale, color=(0,255,0), thickness=1)
-        else:
-            recent_concentartion_indices.append(0)        
         elapsed = (time.time() - total_start)
         print('Total frame processing elapsed:',elapsed)
         cv2.imshow('Facial emotions', image)
