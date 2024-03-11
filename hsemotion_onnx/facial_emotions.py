@@ -43,6 +43,8 @@ class HSEmotionRecognizer:
             self.std=[0.229, 0.224, 0.225]
             if '_b2_' in model_name:
                 self.img_size=260
+            elif 'ddamfnet' in model_name:
+                self.img_size=112
             else:
                 self.img_size=224
         
@@ -51,9 +53,8 @@ class HSEmotionRecognizer:
     
     def preprocess(self,img):
         x=cv2.resize(img,(self.img_size,self.img_size))/255
-        x[..., 0] = (x[..., 0]-0.485)/0.229
-        x[..., 1] = (x[..., 1]-0.456)/0.224
-        x[..., 2] = (x[..., 2]-0.406)/0.225
+        for i in range(3):
+            x[..., i] = (x[..., i]-self.mean[i])/self.std[i]
         return x.transpose(2, 0, 1).astype("float32")[np.newaxis,...]
 
     def predict_emotions(self,face_img, logits=True):
